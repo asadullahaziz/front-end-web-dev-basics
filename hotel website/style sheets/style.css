@@ -1,0 +1,302 @@
+/* CSS Reset */
+*
+{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+/* Main Styling */
+
+html, body
+{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.7em;
+}
+
+p
+{
+    padding: 10px 0px;
+}
+
+h1, h2, h3
+{
+    padding-bottom: 20px;
+}
+
+/* Utility Classes */
+.clr
+{
+    clear: both;
+}
+
+.container
+{
+    max-width: 1000px;
+    margin: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    overflow: auto;
+}
+
+.btn
+{
+    display: inline-block;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 13px;
+    font-size: 18px;
+}
+
+.btn:hover
+{
+    background-color: #f7c08a;
+    color: #333;
+}
+
+.btn-lite
+{
+    background-color: #fff;
+    color: #333;
+}
+
+.text-primary
+{
+    color: #f7c08a;
+}
+
+.bg-dark
+{
+    background-color: #333;
+    color: #fff;
+}
+
+.bg-primary
+{
+    background-color: #f7c08a;
+    color: #333;
+}
+
+.bg-lite
+{
+    background-color: #ddd;
+    color: #333;
+}
+
+.lh-1
+{
+    font-size: 50px;
+    line-height: 1.2em;
+}
+.lh-2
+{
+    font-size: 40px;
+    line-height: 1.2em;
+}
+
+/* Padding */
+.py-1 { padding-top: 10px; padding-bottom: 10px; }
+.py-2 { padding-top: 20px; padding-bottom: 20px; }
+.py-3 { padding-top: 30px; padding-bottom: 30px; }
+
+/* Navigation Bar Styling */
+
+nav
+{
+    background-color: #333;
+    overflow: auto;
+}
+
+a
+{
+    display: block;
+    color: #fff;
+    text-decoration: none;
+}
+
+.logo
+{
+    float: left;
+    padding: 20px 0px;
+}
+
+.nav-links
+{
+    float: right;
+}
+
+.nav-links a
+{
+    padding: 20px;
+    float: left;
+}
+
+.nav-links a:hover
+{
+    background-color: #444;
+    color: #f7c08a;
+}
+
+#selected
+{
+    background-color: #444;
+}
+
+/* Showcase Styling */
+#showcase
+{
+    background: url('../image_resources/showcase.jpg') no-repeat center center/cover;
+    height: 100%;
+}
+
+.content
+{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    text-align: center;
+    color: #fff;
+}
+
+.content p
+{
+    font-size: 20px;
+    padding: 30px 0px;
+}
+
+/* Home Info Styling */
+
+#home-info
+{
+    height: 450px;
+}
+
+.info-content
+{
+    text-align: center;
+    float: right;
+    width: 50%;
+    height: 100%;
+    padding: 50px 30px;
+    overflow: hidden;
+}
+
+.info-content p
+{
+    padding-bottom: 50px;
+}
+
+.info-image
+{
+    background: url('../image_resources/photo-1.jpg') no-repeat center center/cover;
+    float: left;
+    width: 50%;
+    height: 100%;
+}
+
+/* Features Styling */
+.box
+{
+    height: 350px;
+    float: left;
+    width: 33.3%;
+    text-align: center;
+    padding: 50px;
+}
+
+.box i
+{
+    padding-bottom: 10px;
+}
+
+/* Hotel About Styling */
+#about .info-right
+{
+    width: 50%;
+    float: right;
+}
+
+.info-right img
+{
+    display: block;
+    width: 70%;
+    margin: auto;
+    border-radius: 50%;
+}
+
+#about .info-left
+{
+    width: 50%;
+    float: left;
+}
+
+/* Testimonials */
+#testimonials
+{
+    background: url('../image_resources/test-bg.jpg') no-repeat center center/cover;
+    height: 100%;
+    text-align: center;
+}
+
+#testimonials h2
+{
+    color: #eee;
+}
+
+.testimonial
+{
+    margin: 20px;
+    overflow: auto;
+    padding: 20px;
+    opacity: 0.9;
+}
+
+.testimonial img
+{
+    display: block;
+    float: left;
+    width: 100px;
+    border-radius: 50%;
+}
+
+/* Contact Form Styling */
+.form-group
+{
+    margin-bottom: 20px;
+}
+
+.form-group label
+{
+    display: block;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.form-group input, .form-group textarea
+{
+    width: 100%;
+    padding: 10px;
+    border: 1px #bbb solid;
+    border-radius: 4px;
+}
+
+.form-group input:focus, .form-group textarea:focus
+{
+    outline: none;
+    border-color: #f7c08a;
+}
+
+#features, #contact-info
+{
+    overflow: auto;
+}
+
+/* Footer Styling */
+footer
+{
+    background-color: #444;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}

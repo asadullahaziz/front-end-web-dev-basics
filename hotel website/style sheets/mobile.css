@@ -1,0 +1,38 @@
+/* Mobile Home Info */
+#home-info
+{
+    height: 100%;
+}
+
+.info-image
+{
+    float: none;
+    display: none;
+}
+
+.info-content
+{
+    float: none;
+    width: 100%;
+}
+
+/* Mobile Features & Contact Boxes */
+.box
+{
+    float: none;
+    width: 100%;
+}
+
+/* Mobile About */
+#about .info-right
+{
+    margin-top: 30px;
+    float: none;
+    width: 100%;
+}
+
+#about .info-left
+{
+    float: none;
+    width: 100%;
+}

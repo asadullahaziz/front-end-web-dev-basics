@@ -1,0 +1,80 @@
+*
+{
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body
+{
+    background-color: #344A72;
+}
+
+.container
+{
+    max-width: 400px;
+    margin: 30px auto;
+}
+
+.form-wrap
+{
+    background-color: white;
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 5px;
+}
+
+.text, h1
+{
+    text-align: center;
+}
+
+.text a
+{
+    text-decoration: none;
+}
+
+#outside-text
+{
+    color: white;
+}
+
+#outside-text a
+{
+    color: #0cbe92;
+    text-decoration: none;
+}
+
+form .formbox label
+{
+    display: block;
+}
+
+form .formbox input
+{
+    width: 100%;
+    height: 30px;
+    margin-top: 4px;
+}
+
+.formbox
+{
+    margin: 18px;
+}
+
+.btn
+{
+    display: block;
+    width: 90.5%;
+    margin: 20px 17.8px;
+    height: 30px;
+    background-color: #0cbe92;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.btn:hover
+{
+    background-color: #37a08e;
+}

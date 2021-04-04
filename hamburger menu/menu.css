@@ -1,0 +1,145 @@
+/* Hamburger Menu */
+#menu
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+#toggler
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: 50px;
+    z-index: 2;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.hamburger
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: 50px;
+    padding: 5px;
+    background: var(--primary-color);
+    opacity: 0.7;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.4s ease;
+}
+
+#toggler:hover + .hamburger
+{
+    background: var(--secondary-color);
+    opacity: 0.85;
+}
+
+/* Hamburger Lines */
+.hamburger > div
+{
+    position: relative;
+    height: 2px;
+    width: 100%;
+    background: #fff;
+    transition: all 0.4s ease;
+}
+
+.hamburger div::before,
+.hamburger div::after
+{
+    position: absolute;
+    content: '';
+    height: 2px;
+    width: 100%;
+    background: #fff;
+    transform: translateY(-10px);
+}
+
+.hamburger div::after
+{
+    transform: translateY(10px);
+}
+
+/* Toggle Animation */
+#toggler:checked + .hamburger > div
+{
+    transform: rotate(135deg);
+}
+
+#toggler:checked +.hamburger > div::before,
+#toggler:checked +.hamburger > div::after
+{
+    transform: rotate(90deg);
+}
+
+/* Rotate Animation On Hover */
+#toggler:checked:hover + .hamburger > div
+{
+    transform: rotate(225deg);
+}
+
+/* Menu Page */
+.nav-page
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    visibility: hidden;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(40, 42, 46, 0.95);
+    transition: all 0.4s ease;
+    border-radius: 50%;
+    transform: scale(0);
+}
+
+.nav-page > ul
+{
+    transition: all 0.4s ease;
+}
+
+.nav-page ul li
+{
+    color: #fff;
+    list-style: none;
+    margin: 2rem;
+}
+
+.nav-page ul li a
+{
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    transition: all 0.2s ease-in;
+}
+
+.nav-page ul li a:hover
+{
+    color: goldenrod;
+}
+
+/* View Menu Page */
+#toggler:checked ~ .nav-page
+{
+    visibility: visible;
+    transform: scale(1);
+    transition-duration: 0.75s;
+    border-radius: 0%;
+}
+
+#toggler:checked ~ .nav-page > ul
+{
+    transition-delay: 0.5s;
+}

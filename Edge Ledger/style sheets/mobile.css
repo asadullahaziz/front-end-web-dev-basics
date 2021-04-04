@@ -1,0 +1,81 @@
+/* Mobile Navigation Bar */
+#navbar
+{
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#navbar .logo
+{
+    margin-bottom: 0.5rem;
+}
+
+#navbar ul
+{
+    padding: 0.5rem;
+}
+
+/* Mobile Showcase */
+#showcase
+{
+    height: 92vh;
+    margin-top: -40px;
+}
+
+#showcase .showcase-content
+{
+    padding: 0 2rem;
+}
+
+#showcase .showcase-content h1
+{
+    font-size: 2.5rem;
+    line-height: 1;
+    margin-bottom: 1.2rem;
+}
+
+
+/* What We Do - Align icons to left */
+#what .container .items
+{
+    display: block;
+}
+
+#what .items .item
+{
+    display: flex;
+    text-align: left;
+}
+
+#what .items .item i
+{
+    margin-right: 1.3rem;
+    margin-bottom: 0;
+    align-self: center;
+}
+
+/* Who we are */
+#who
+{
+    display: block;
+}
+
+#who .who-img
+{
+    display: none;
+}
+
+/* clients */
+
+
+/* Contact Us */
+#contact
+{
+    display: block;
+}
+
+#contact .map
+{
+    height: 40vh;
+}
